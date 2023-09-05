@@ -7,16 +7,16 @@ let boton = document.getElementById("btn1");
 
 //pa.style.color = "red";
 //document.getElementById(p1).innerText = "Cambiar Texto";
-document.createElement(pa);
 
-boton.onclick = function() {
-    if (inp1.value > 18) {
-        pa.innerHTML = "Es MAyor";
-    }else{
-        pa.innerHTML = "Es MEnor!";
+boton.onclick = function () {
+    let choi = inp1.value
+    if (choi.toLowerCase() != "s" && choi.toLowerCase() != "n") {
+        pa.innerHTML = "Ingreso no Vlaido";
+    } else {
+        pa.innerHTML = "OK!";
     }
-    titu.innerHTML = inp1.nodeValue;
-    
+    titu.innerHTML = inp1.ariaCurrent;
+
     pa.style.color = "red";
     //alert("Boton!!!");
 
