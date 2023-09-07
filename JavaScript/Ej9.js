@@ -10,27 +10,21 @@ Boton1.onclick = function () {
     //Parrafo1.innerHTML = ""
 };
 
-for (let i = 0; i < 5; i++) {
-    console.log(i);
-}
 
 function separarLetras(frase = "DEf") {
     let fraseSepar = " ";
 
     for (let i = 0; i < frase.length; i++) {
-        fraseSepar = frase.substring(i);
-        Parrafo1.innerHTML = fraseSepar;
+        fraseSepar += frase.substring(i) + " ";
+        
         console.log(i);
     }
 
-    //for (j = 0; frase.length; j++) {
-    fraseSepar = frase.concat(1,"x");
-    //fraseSepar = frase.length;
-    //}
+
     Parrafo1.innerHTML = fraseSepar;
-    //(`<p id="foo">Some HTML</p>`);
-    //document.createTextNode("dfsdsdfsdf");
-    // Step 1: Create a new <p> element
+
+    
+    
     var paragraph = document.createElement("p");
 
     // Step 1: Create a template string with a variable
