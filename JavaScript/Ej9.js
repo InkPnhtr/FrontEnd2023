@@ -7,9 +7,12 @@ let j=0;
 
 Boton1.onclick = function () {
     separarLetras(Ingreso1.value)
+    //Parrafo1.innerHTML = ""
 };
 
-
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
 
 function separarLetras(frase = "DEf") {
     let fraseSepar = " ";
@@ -21,10 +24,10 @@ function separarLetras(frase = "DEf") {
     }
 
     //for (j = 0; frase.length; j++) {
-    //fraseSepar = frase.concat(1,"x");
+    fraseSepar = frase.concat(1,"x");
     //fraseSepar = frase.length;
     //}
-    //Parrafo1.innerHTML = fraseSepar;
+    Parrafo1.innerHTML = fraseSepar;
     //(`<p id="foo">Some HTML</p>`);
     //document.createTextNode("dfsdsdfsdf");
     // Step 1: Create a new <p> element
