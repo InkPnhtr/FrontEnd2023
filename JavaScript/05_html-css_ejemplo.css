@@ -1,0 +1,111 @@
+/* */
+
+/* Selectores */
+
+    /* Etiquetas */
+    body{
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+    }
+    header{
+        padding: 5px;
+        margin-bottom: 20px;
+        background: #514f5b;
+    }
+    footer{
+        text-align:center;
+    }
+    label{
+        width: 100%;
+        display: block;
+        padding-bottom: 10px; 
+    }
+
+    /* Id */
+    #main-section{
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 100vw;
+        padding: 5% 0;
+    }
+   
+    #form-registro{
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        align-items: center;
+        background: #a1deeb;
+        padding: 2%;
+        border-radius: 10px;
+    }
+
+    /* Clases */
+    .subtitle{
+        padding: 2% 2% 2%;
+        color: rgb(0, 0, 0);
+    }
+    .section{
+        padding: 2%;
+    }
+    .ul{
+        list-style: none;
+        display: inline-flex;
+        justify-content: center;
+        width: 85%;
+    }
+        .ul li {
+            padding: 0% 15% 0%;
+        }
+    .link {
+        padding: 2px;
+        color: rgb(150, 184, 220);
+        text-decoration: none;
+        font-weight: 500;
+        border: solid 5px;
+        border-radius: 8%;
+    }
+        .link.btn {
+            display: block;
+            position: relative;
+            margin: 1% auto 0;
+            width: 50%;
+        }
+    .form-group{
+        padding: 2% 2%;
+    }
+    .input{
+        padding: 2% 2%;
+        border: solid 4px rgb(219, 234, 9);
+        border-radius: 5px;
+    }
+
+    /* por atributo */
+    input[type="text"] {}
+
+/* Pseudo-Selectores */   
+
+    /* Pseudo-Clases */
+    #main-section .section:first-child{
+        max-width: 45%;
+    }
+    .form-group:last-child{
+        width:5%;
+    }
+
+    .link:hover{
+        color:white;
+        background-color:grey;
+    }
+    .input:focus{
+        color: grey;
+        outline-color: green;
+    }
+    /* Pseudo-Elementos */
+    .link::after{
+
+    }
+    .link::before{
+
+    }
