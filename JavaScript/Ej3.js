@@ -3,6 +3,8 @@ let inp1 = document.getElementById("ibox1");
 let pa = document.getElementById("p1");
 let boton = document.getElementById("btn1");
 
+
+console.log("HOLA MUNDO!!");
 //window.onload = alert("hoLAAAA!")
 
 //pa.style.color = "red";
