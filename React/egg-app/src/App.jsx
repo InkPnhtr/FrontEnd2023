@@ -18,23 +18,29 @@ function App() {
 
   const [listCounters, setListCounters] = useState([]);
 
+  const [inputValue, setInputValue] = useState('');
+
 
   function agregarVoto() {
-    listCounters.push(counters);
+    if (event.key === 'Enter') {
+      listCounters.push(counters);
 
-    setCounters({
-      ...counters, votosMesa: counters.votosMesa + 1,
-      nroOrden: document.getElementById("i1").value,
-    })
-    // counters.votosMesa = counters.votosMesa +1;
-    //const newCounters = { newCounters: counters};
+      setCounters({
+        ...counters, votosMesa: counters.votosMesa + 1,
+        nroOrden: document.getElementById("i1").value,
+      })
+      // counters.votosMesa = counters.votosMesa +1;
+      //const newCounters = { newCounters: counters};
 
-    //setObjectArray([...listCounters, newCounters]);
-    
-    // listCounters.push(counters);
-    // listCounters.push(counters);
-    
-    console.log(listCounters);
+      //setObjectArray([...listCounters, newCounters]);
+
+      // listCounters.push(counters);
+      // listCounters.push(counters);
+
+      console.log(listCounters);
+      setInputValue('')
+      
+    }
   }
 
 
@@ -62,7 +68,10 @@ function App() {
       <h1>NroOrden: {counters.nroOrden} </h1>
       <div className='enterData'>
         <label for="i1">Nro de Orden: </label>
-        <input size={4} id='i1' type='number' placeholder='Orden'></input>
+        <input size={4} id='i1' type='number' placeholder='Orden' 
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
+        onKeyDown={agregarVoto}></input>
       </div>
       <div className="card">
         {/* <button onClick={() => setCount((count) => count + 1)}>
