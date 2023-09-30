@@ -2,8 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import{GoogleMap, useLoadScript, Maker} from "@react-google-maps/api";
+
 
 function App() {
+  const {} useLoadScript({GoogleMapsApiKey: ""});
   const [count, setCount] = useState(0)
 
   return (
